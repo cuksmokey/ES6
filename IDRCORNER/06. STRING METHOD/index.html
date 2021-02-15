@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        window.onload = function(){
+            let str = "EcmaScript"
+
+            // REPEAT
+            console.log(str.repeat(10))
+            // STARTWITH
+            console.log(str.startsWith("Ecma"))
+            console.log(str.startsWith("S",4))
+            // ENDWITH
+            console.log(str.endsWith("Script"))
+            // INCLUDES
+            let str2 = "Tutorial Ecma Script Terbaru"
+            console.log(str.includes("Ecma"))
+
+            if(str.includes("Enak")){
+                console.log("Tutorial Apa?")
+            }else{
+                console.log("Apa Woy?")
+            }
+        }
+    </script>
+
+</body>
+</html>

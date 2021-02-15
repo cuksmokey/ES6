@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        window.onload = function(){
+            // penulisan lama
+            let ctk = function(){
+                console.log('ES5 Lama')
+            }
+
+            ctk()
+
+            // penulisan baru
+            // standar
+            let ctk2 = () => {
+                console.log('Standar')
+            }
+            ctk2()
+
+            // 1 perintah
+            let ctk3 = () => console.log('Satu Perintah')
+            ctk3()
+            
+            // jika parsing data / mengirimkan data
+            // 1
+            let ctk4 = nama => console.log(`${nama}`)
+            ctk4('Kirim Data')
+            // 2
+            let ctk5 = (nama,angka) => console.log(`${nama}. ${angka}`)
+            ctk5('Kirim Data',100)
+        }
+    </script>
+
+</body>
+</html>

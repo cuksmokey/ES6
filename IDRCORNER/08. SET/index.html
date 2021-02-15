@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        window.onload = function(){
+            let buah = new Set()
+
+            buah.add("Mangga").add("Jambu").add("Apel").add("Jambu")
+
+            // buah.clear()
+
+            console.log(buah.size)
+            
+            buah.delete("Apel")
+            
+            console.log(buah.has("Apel"))
+            
+            console.log(buah.size)
+
+            console.log(buah)
+
+            let arBuah = ["Apel","Jeruk","Rambutan","Apel"]
+            let setBuah = new Set(arBuah)
+            arBuah = [...setBuah]
+
+            console.log(arBuah)
+            console.log(setBuah)
+        }
+    </script>
+
+</body>
+</html>

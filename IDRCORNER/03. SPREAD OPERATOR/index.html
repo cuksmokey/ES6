@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- SPREAD OPERATOR = MENGELUARKAN ISI OPERATOR MENJADI SATU LEVEL -->
+    <script>
+        window.onload = function(){
+            
+            // EXAMPLE 1
+            let coding = ["php", "java", "python"]
+            let coding2 = [...coding,"visualbasic","pascal","c++"]
+
+            console.log(coding2)
+
+            // EXAMPLE 2
+            let siswaBaru=["Wisnu","12F","TKJ"]
+
+            function siswa(nama,kelas,jurusan){
+                console.log("Nama : "+nama+
+                    ", Kelas : "+kelas+
+                    ", Jurusan : "+jurusan)
+            }
+
+            // TIDAK PAKAI SPREAD OPERATOR
+            siswa(siswaBaru)
+            //PAKAI SPREAD OPERATOR
+            siswa(...siswaBaru)
+
+        }
+
+
+
+    </script>
+
+</body>
+</html>
