@@ -40,7 +40,6 @@ let wisnu = Mahasiswa('wisnu', 20)
 
 // 3. Constructor Function
 function Dosen(nama, energi) {
-    // let mahasiswa = {}
     this.nama = nama
     this.energi = energi
     this.makan = function(porsi) {
@@ -49,7 +48,6 @@ function Dosen(nama, energi) {
     this.main = function(jam) {
         this.energi -= jam
     }
-    // return mahasiswa
 }
 
 let nugraha = new Dosen('wisnu', 20)
