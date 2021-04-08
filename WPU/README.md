@@ -49,4 +49,38 @@ array.prototype.reduce()
 
 # 4.2 - Filter, Map, Reduce
 
-# 4.3 - Latihan
+# 4.3 - Latihan Filter, Map, Reduce
+- folder latihan `filter map reduce`
+
+---
+
+# 5.1 - Template Literal
+- atau di sebut Template String
+- Template literal = string literal beda expresi di dalamnya
+```
+let kutipSatu = ''
+let kutipDua = ""
+let backTick = ``
+```
+- Hanya bisa menggunakan backtick (`) 
+- Multi-line String - enter
+- HTML Fragment - tag html
+- Embedded Exprression - ${}
+- Expression Interpolation - operasi matematika
+
+# 5.2 - Latihan Template Literal
+
+# 5.3 - Tagged Template
+- Bentuk yang lebih komplek, sebuah function
+- Penggunaan:
+- 1. Escaping HTML Tags / Sanitize
+- 2. Translation & Internationalizarion
+- 3. Styled Components
+- folder latihan `tagged template`
+
+---
+
+# 6.1 - Destructuring Variable
+- atau Destructuring Assignment
+- Expression yang dapat membongkar nilai dari Array/object dalam variabel yang terpisah
+- script6.js
