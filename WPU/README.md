@@ -17,20 +17,20 @@ Membuat object pada js
 
 # 2.2 - Closure
 
-Lexical Scope
+- Lexical Scope
 
 ---
 
 # 3.1 - Arrow Function
 
-script2.js
+- script2.js
 
 # 3.2 - Arrow Function (lanjutan)
 
+- script3.js
 - `this`
 - Object Literal dan Function Declaration pakai Arrow Function cari ke global window
 - Constructor Function pakai Arrow Function cari di Lexical Scope/function parent/induk
-- script3.js
 
 ---
 
@@ -49,12 +49,16 @@ array.prototype.reduce()
 
 # 4.2 - Filter, Map, Reduce
 
+- script5.js
+
 # 4.3 - Latihan Filter, Map, Reduce
+
 - folder latihan `filter map reduce`
 
 ---
 
 # 5.1 - Template Literal
+
 - atau di sebut Template String
 - Template literal = string literal beda expresi di dalamnya
 ```
@@ -81,6 +85,89 @@ let backTick = ``
 ---
 
 # 6.1 - Destructuring Variable
+
+- script6.js
 - atau Destructuring Assignment
 - Expression yang dapat membongkar nilai dari Array/object dalam variabel yang terpisah
-- script6.js
+
+# 6.2 - Destructuring ( function )
+
+- script7.js
+
+---
+
+# 7.0 - Looping Baru pada Javascript
+
+- script8.js
+```
+for..of
+for..in
+```
+- for of > Iterable Object
+1. String
+2. Array
+3. Arguments / NodeList
+4. TypedArray
+5. Map
+6. Set
+7. User-defined Iterables
+
+- for in > Enumerable Object
+1. Object
+
+---
+
+# 8.0 - Spread Operator vs. Rest Parameter
+
+- `...`
+
+# 8.1 - Spread Operator
+
+- script9.js 
+- Memecah (expand / unpack) iterable menjadi single element
+
+# 8.2 - Rest Parameter
+
+- script10.js
+- Mempresentasikan argument pada function dengan jumlah yang tidak terbatas menjadi sebuah array
+
+---
+
+# 9.0 - Asynchronous Javascript
+
+1. Callback
+2. Promise
+3. ajax
+4. Async & Await
+
+---
+
+# 10.0 - Callbacks
+
+# 10.1 - Callbacks (latihan)
+
+---
+
+# 11.0 - Promise
+
+---
+---
+
+# Javascript
+
+- single-threaded
+> Thread = Urutan eksekusi kode yang dapat dilakukan secara bebas / independent satu sama lain
+- non-blocking
+- asynchronous
+- concurrent language
+> Asynchronous + single-threaded = Concurrency
+> Asynchronous + multi-threades = Parallelism
+- Kesimpulan
+1. Single vs Multi Thread > Lingkungan ekseskusi task
+2. Blocking vs Non-blocking > Teknik ngoding (Input Output related)
+3. Synchronous vs Asynchronous > Teknik ngoding (HTTP Request related)
+4. Concurrent vs Parallel > Lingkungan eksekusi task
+- Javascript > V8 Engine
+1. Heap > Memory Allocation
+2. Stack > Function Call & Execution Context
+- Heap - Stack > Web API ( Asynchronous Callbacks ) > Callback Queue > Event Loop

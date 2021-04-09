@@ -63,3 +63,27 @@ const mhs2 = {
 
 const {nama:nn, umur: uu, email: ee = 'email@default.com'} = mhs2
 console.log(ee);
+
+// Rest Parameter > jika tdk tau berapa assignmet yang ada di object 
+const mhs3 = {
+    nama5: 'wisnu',
+    umur5: 24,
+    email5: 'email@email.com'
+}
+
+const {nama5, ...val2} = mhs3
+console.log(val2);
+
+// Mengambil field pada object, dikirim sebagai paramater untuk function
+const mhs4 = {
+    id: 4,
+    nama5: 'wisnu',
+    umur5: 24,
+    email5: 'email@email.com'
+}
+
+function getIdMhs({ id }) {
+    return id
+}
+
+console.log(getIdMhs(mhs4));
