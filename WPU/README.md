@@ -23,11 +23,11 @@ Membuat object pada js
 
 # 3.1 - Arrow Function
 
-- script2.js
+- `script2.js`
 
 # 3.2 - Arrow Function (lanjutan)
 
-- script3.js
+- `script3.js`
 - `this`
 - Object Literal dan Function Declaration pakai Arrow Function cari ke global window
 - Constructor Function pakai Arrow Function cari di Lexical Scope/function parent/induk
@@ -49,7 +49,7 @@ array.prototype.reduce()
 
 # 4.2 - Filter, Map, Reduce
 
-- script5.js
+- `script5.js`
 
 # 4.3 - Latihan Filter, Map, Reduce
 
@@ -89,19 +89,19 @@ let backTick = ``
 
 # 6.1 - Destructuring Variable
 
-- script6.js
+- `script6.js`
 - atau Destructuring Assignment
 - Expression yang dapat membongkar nilai dari Array/object dalam variabel yang terpisah
 
 # 6.2 - Destructuring ( function )
 
-- script7.js
+- `script7.js`
 
 ---
 
 # 7.0 - Looping Baru pada Javascript
 
-- script8.js
+- `script8.js`
 
 ```
 for..of
@@ -130,12 +130,12 @@ for..in
 
 # 8.1 - Spread Operator
 
-- script9.js
+- `script9.js`
 - Memecah (expand / unpack) iterable menjadi single element
 
 # 8.2 - Rest Parameter
 
-- script10.js
+- `script10.js`
 - Mempresentasikan argument pada function dengan jumlah yang tidak terbatas menjadi sebuah array
 
 ---
@@ -170,6 +170,62 @@ for..in
 ---
 
 # 12.0 - fetch
+
+- folder `latihan fetch`
+- Sebuah method pada API javascript untuk mengambil `resource` dari jaringan, dan mengembalikan `promise` yang selesai (`fullfilled`) ketika ada `response` yang tersedia
+
+```
+fetch(resource, init)
+```
+
+- resource
+
+1. URL > alamat dari sumber yang kita ambil
+2. Request Object > representasi permintaan sumber
+
+- init - konfigurasi tambahan pada sebuah request berbentuk object
+
+1. method
+2. headers
+3. body
+4. mode
+5. cache
+6. referrer
+7. referrerPolicy
+8. integrity
+9. keepalive
+10. signal
+
+- response (property)
+
+1. headers
+2. ok
+3. redirected
+4. status
+5. statusText
+6. type
+7. url
+8. body
+
+- response (method)
+
+1. clone()
+2. error()
+3. redirect()
+4. blob()
+5. formData()
+6. json()
+7. text()
+
+---
+
+# 12.1 - fetch ( Refactor ) - Async Await
+
+---
+
+# 13.0 - Async Await
+
+- `script11.js`
 
 ---
 
