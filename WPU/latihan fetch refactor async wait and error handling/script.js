@@ -1,45 +1,33 @@
-// const searchButton = document.querySelector(".search-button");
-// searchButton.addEventListener("click", function () {
-//   const inputKeyword = document.querySelector(".input-keyword");
-//   fetch("http://www.omdbapi.com/?apikey=4bc5d569&s=" + inputKeyword.value)
-//     .then((response) => response.json())
-//     .then((response) => {
-//       const movies = response.Search;
-//       let cards = "";
-//       movies.forEach((m) => (cards += showCards(m)));
-//       const movieContainer = document.querySelector(".movie-container");
-//       movieContainer.innerHTML = cards;
-
-//       // tombol detail
-//       const modalDetailButton = document.querySelectorAll(
-//         ".modal-detail-button"
-//       );
-//       modalDetailButton.forEach((btn) => {
-//         btn.addEventListener("click", function () {
-//           const imdbid = this.dataset.imdbid;
-//           fetch("http://www.omdbapi.com/?apikey=4bc5d569&i=" + imdbid)
-//             .then((response) => response.json())
-//             .then((m) => {
-//               const movieDetail = showMovieDetail(m);
-//               const modalBody = document.querySelector(".modal-body");
-//               modalBody.innerHTML = movieDetail;
-//             });
-//         });
-//       });
-//     });
-// });
-
 const searchButton = document.querySelector(".search-button");
 searchButton.addEventListener("click", async function () {
-  const inputKeyword = document.querySelector(".input-keyword");
-  const movies = await getMovies(inputKeyword.value);
-  updateUI(movies);
+  try {
+    const inputKeyword = document.querySelector(".input-keyword");
+    const movies = await getMovies(inputKeyword.value);
+    updateUI(movies);
+  } catch (error) {
+    // console.log(error);
+    alert(error);
+  }
 });
 
 function getMovies(keyword) {
   return fetch("http://www.omdbapi.com/?apikey=4bc5d569&s=" + keyword)
-    .then((response) => response.json())
-    .then((respones) => respones.Search);
+    .then((response) => {
+      // console.log(response);
+      if (!response.ok) {
+        throw new Error(response.statusText);
+      }
+
+      return response.json();
+    })
+    .then((response) => {
+      // console.log(response);
+      if (response.Response === "False") {
+        throw new Error(response.Error);
+      }
+
+      return response.Search;
+    });
 }
 
 function updateUI(movies) {
