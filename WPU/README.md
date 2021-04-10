@@ -61,12 +61,14 @@ array.prototype.reduce()
 
 - atau di sebut Template String
 - Template literal = string literal beda expresi di dalamnya
+
 ```
 let kutipSatu = ''
 let kutipDua = ""
 let backTick = ``
 ```
-- Hanya bisa menggunakan backtick (`) 
+
+- Hanya bisa menggunakan backtick (`)
 - Multi-line String - enter
 - HTML Fragment - tag html
 - Embedded Exprression - ${}
@@ -75,6 +77,7 @@ let backTick = ``
 # 5.2 - Latihan Template Literal
 
 # 5.3 - Tagged Template
+
 - Bentuk yang lebih komplek, sebuah function
 - Penggunaan:
 - 1. Escaping HTML Tags / Sanitize
@@ -99,11 +102,14 @@ let backTick = ``
 # 7.0 - Looping Baru pada Javascript
 
 - script8.js
+
 ```
 for..of
 for..in
 ```
+
 - for of > Iterable Object
+
 1. String
 2. Array
 3. Arguments / NodeList
@@ -113,6 +119,7 @@ for..in
 7. User-defined Iterables
 
 - for in > Enumerable Object
+
 1. Object
 
 ---
@@ -123,7 +130,7 @@ for..in
 
 # 8.1 - Spread Operator
 
-- script9.js 
+- script9.js
 - Memecah (expand / unpack) iterable menjadi single element
 
 # 8.2 - Rest Parameter
@@ -146,28 +153,47 @@ for..in
 
 # 10.1 - Callbacks (latihan)
 
----
+- folder `latihan callback`
 
 # 11.0 - Promise
 
+- Object yang mempresentasikan keberhasialan / kegagalan sebuah event yang async di masa yang akan datang
+- janji (terpenuhi / ingkar)
+- states (fulfilled / rejected / pending)
+- callbak (resolve / reject / finally)
+- aksi (then / catch)
+- .
+- ajax > jquery
+- vanilla javascript
+- fetch()
+
 ---
+
+# 12.0 - fetch
+
+---
+
 ---
 
 # Javascript
 
 - single-threaded
-> Thread = Urutan eksekusi kode yang dapat dilakukan secara bebas / independent satu sama lain
+  > Thread = Urutan eksekusi kode yang dapat dilakukan secara bebas / independent satu sama lain
 - non-blocking
 - asynchronous
 - concurrent language
-> Asynchronous + single-threaded = Concurrency
-> Asynchronous + multi-threades = Parallelism
+  > Asynchronous + single-threaded = Concurrency
+  > Asynchronous + multi-threades = Parallelism
 - Kesimpulan
+
 1. Single vs Multi Thread > Lingkungan ekseskusi task
 2. Blocking vs Non-blocking > Teknik ngoding (Input Output related)
 3. Synchronous vs Asynchronous > Teknik ngoding (HTTP Request related)
 4. Concurrent vs Parallel > Lingkungan eksekusi task
+
 - Javascript > V8 Engine
+
 1. Heap > Memory Allocation
 2. Stack > Function Call & Execution Context
+
 - Heap - Stack > Web API ( Asynchronous Callbacks ) > Callback Queue > Event Loop
