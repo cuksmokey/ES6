@@ -221,11 +221,19 @@ fetch(resource, init)
 
 # 12.1 - fetch ( Refactor ) - Async Await
 
+- folder `latihan fetch refactor`
+
 ---
 
 # 13.0 - Async Await
 
 - `script11.js`
+
+---
+
+# 14.0 - Error Handling
+
+- folder `latihan fetch refactor`
 
 ---
 
